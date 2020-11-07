@@ -16,3 +16,7 @@ https://stackoverflow.com/questions/36706512/how-do-you-automate-pyspark-jobs-on
 
 See also example of how to supply Spark properties configuration at execution runtime:
 https://spark.apache.org/docs/latest/configuration.html#spark-properties
+* spark.sql.broadcastTimeout
+* spark.network.timeout
+```./bin/spark-submit --name "My app" --master local[4] --conf spark.network.timeout=240 --conf spark.sql.broadcastTimeout=1500 --conf spark.eventLog.enabled=false
+  --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar```
