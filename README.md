@@ -13,3 +13,6 @@ https://stackoverflow.com/questions/36706512/how-do-you-automate-pyspark-jobs-on
     - Lambda emr.run_job_flow()
     - PySpark application itself (i.e. Python file)
     - Spark submit at command line
+
+See also example of how to supply Spark properties configuration at execution runtime:
+https://spark.apache.org/docs/latest/configuration.html#spark-properties
