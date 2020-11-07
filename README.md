@@ -18,5 +18,8 @@ See also example of how to supply Spark properties configuration at execution ru
 https://spark.apache.org/docs/latest/configuration.html#spark-properties
 * spark.sql.broadcastTimeout
 * spark.network.timeout
-```./bin/spark-submit --name "My app" --master local[4] --conf spark.network.timeout=240 --conf spark.sql.broadcastTimeout=1500 --conf spark.eventLog.enabled=false
-  --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar```
+
+```
+./bin/spark-submit --name "My app" --master local[4] --conf spark.network.timeout=240 --conf spark.sql.broadcastTimeout=1500 
+--conf spark.eventLog.enabled=false --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar
+```
