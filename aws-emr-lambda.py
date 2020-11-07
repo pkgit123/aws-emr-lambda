@@ -1,6 +1,7 @@
 # grabbed from stackoverflow article
 # https://stackoverflow.com/questions/36706512/how-do-you-automate-pyspark-jobs-on-emr-using-boto3-or-otherwise
 # https://stackoverflow.com/users/690430/kamil-sindi
+# https://stackoverflow.com/users/690430/kamil-sindi?tab=answers
 
 import boto3    
 
